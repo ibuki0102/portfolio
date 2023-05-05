@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Ibuki's Blog</title>
+        <title>Ibuki's About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

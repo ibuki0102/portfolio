@@ -31,7 +31,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Ibuki's Blog</title>
+        <title>Ibuki's Projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
