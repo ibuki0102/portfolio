@@ -6,7 +6,6 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(240, 240, 240);
-  margin-left: 5px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: 10px;
@@ -16,16 +15,12 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
   .Main {
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1100px;
-    min-width: 800px;
-    height: 1700px;
+    max-width: 1100px;
+    height: 1900px;
     background-color: white;
-    margin: 80px auto 0;
+    margin: 60px auto 0;
     padding: 20px;
+    position: relative;
     .Container {
       padding-top: 20px;
       display: flex;
@@ -36,6 +31,7 @@
         flex-direction: column;
         align-items: center;
         .Pfp {
+          width: 200px;
           border-radius: 50%;
           margin-bottom: 20px;
           -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -44,14 +40,14 @@
         h1 {
           display: flex;
           justify-content: center;
-          width: 500px;
         }
         .Pronouns {
           margin-bottom: 20px;
           color: rgb(102, 102, 102);
         }
         .Title {
-          font-size: 24px;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 10px;
           margin-bottom: 10px;
           border-top: 2px solid black;
@@ -61,30 +57,28 @@
         margin: 40px 0;
         padding: 20px;
         background-color: #f4f8ff;
-        width: 900px;
         h3 {
           margin-bottom: 10px;
         }
       }
       .Skills {
         padding: 20px;
-        width: 900px;
         h2 {
           margin-bottom: 20px;
         }
         .ContentContainer {
           display: flex;
+          justify-content: space-between;
           column-gap: 40px;
           row-gap: 40px;
           flex-wrap: wrap;
           .SkillsContainer {
-            width: 400px;
             h3 {
               border-bottom: 2px solid black;
               padding-bottom: 10px;
             }
             .SkillContainer {
-              width: 400px;
+              width: 300px;
               display: flex;
               align-items: center;
               justify-content: space-between;
@@ -123,7 +117,6 @@
         }
       }
       .Certifications {
-        width: 900px;
         padding: 40px 20px 20px 20px;
         .Certification {
           border: 2px solid rgb(138, 138, 138);
@@ -146,6 +139,43 @@
         p {
           margin-top: 20px;
           color: rgb(63, 63, 63);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  .Background {
+    .Main {
+      height: 1800px;
+    }
+  }
+}
+@media screen and (min-width: 730px) {
+  .Background {
+    .Main {
+      height: 1600px;
+      .Container {
+        .Certifications {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Background {
+    margin-left: 5px;
+    .Main {
+      height: 1500px;
+      .Container {
+        .Intro {
+          .Pfp {
+            width: 300px;
+          }
+        }
+        .Certifications {
+          width: 100%;
         }
       }
     }

@@ -26,6 +26,7 @@ export default function Home() {
                 alt="Welcome Pic"
                 priority="true"
                 width={700}
+                className={styles.WelcomePic}
               />
             </div>
           </div>

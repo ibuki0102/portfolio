@@ -48,9 +48,9 @@ export default function Projects() {
               <div className={styles.ProjectContainer}>
                 <div className={styles.SwiperContainer}>
                   <Swiper
-                    modules={[Pagination, Autoplay]}
-                    direction={'vertical'}
-                    pagination={{ clickable: true, dynamicBullets: true }}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    spaceBetween={50}
+                    pagination={{ clickable: true }}
                     slidesPerView={1}
                     className={styles.Swiper}
                     autoplay={{
@@ -63,7 +63,7 @@ export default function Projects() {
                         src={tetris}
                         alt="tetris Pic"
                         priority="true"
-                        width={350}
+                        width={400}
                         height={300}
                       />
                     </SwiperSlide>
@@ -121,9 +121,9 @@ export default function Projects() {
               <div className={styles.ProjectOppositeContainer}>
                 <div className={styles.SwiperContainer}>
                   <Swiper
-                    modules={[Pagination, Autoplay]}
-                    direction={'vertical'}
-                    pagination={{ clickable: true, dynamicBullets: true }}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    spaceBetween={50}
+                    pagination={{ clickable: true }}
                     slidesPerView={1}
                     className={styles.Swiper}
                     autoplay={{
@@ -206,9 +206,9 @@ export default function Projects() {
               <div className={styles.ProjectContainer}>
                 <div className={styles.SwiperContainer}>
                   <Swiper
-                    modules={[Pagination, Autoplay]}
-                    direction={'vertical'}
-                    pagination={{ clickable: true, dynamicBullets: true }}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    spaceBetween={50}
+                    pagination={{ clickable: true }}
                     slidesPerView={1}
                     className={styles.Swiper}
                     autoplay={{
@@ -286,9 +286,9 @@ export default function Projects() {
               <div className={styles.ProjectOppositeContainer}>
                 <div className={styles.SwiperContainer}>
                   <Swiper
-                    modules={[Pagination, Autoplay]}
-                    direction={'vertical'}
-                    pagination={{ clickable: true, dynamicBullets: true }}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    spaceBetween={50}
+                    pagination={{ clickable: true }}
                     slidesPerView={1}
                     className={styles.Swiper}
                     autoplay={{

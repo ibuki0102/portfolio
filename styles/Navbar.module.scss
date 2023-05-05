@@ -1,27 +1,29 @@
 .Overlay {
   max-width: 1100px;
   margin: 0 auto;
-  height: 80px;
+  padding: 10px;
+  height: 60px;
   background-color: cornflowerblue;
   opacity: 0.8;
   position: relative;
   z-index: 2;
+  transition: 0.3s;
   .Container {
-    display: flex;
     margin: 0px auto;
     max-width: 1000px;
     height: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     .BlogTitle {
-      font-size: 32px;
+      font-size: 20px;
       font-weight: 700;
     }
     .Navbar {
       display: flex;
-      column-gap: 30px;
-      font-size: 24px;
+      column-gap: 16px;
+      font-size: 16px;
       li:hover > a {
         border-bottom: 2px solid white;
       }
@@ -68,6 +70,30 @@
         li:hover > a {
           border-bottom: 2px solid black;
         }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .Overlay {
+    transition: 0.3s;
+    height: 80px;
+    .Container {
+      .BlogTitle {
+        font-size: 32px;
+      }
+      .Navbar {
+        font-size: 24px;
+        column-gap: 24px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .Overlay {
+    .Container {
+      .Navbar {
+        column-gap: 30px;
       }
     }
   }

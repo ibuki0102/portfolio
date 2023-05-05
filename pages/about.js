@@ -115,7 +115,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className={styles.SkillContainer}>
-                    <p>MongoDB/Mongoose</p>
+                    <p>Mongoose</p>
                     <div className={styles.SkillBarBackground}>
                       <div className={styles.Fourty}></div>
                     </div>

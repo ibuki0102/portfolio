@@ -2,12 +2,38 @@
   width: 100%;
   z-index: 0;
   .Swiper {
-    width: 900px;
-    height: 700px;
+    width: 360px;
+    height: 420px;
     .ImgContainer {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .Container {
+    .Swiper {
+      width: 700px;
+      height: 500px;
+      .ImgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Container {
+    .Swiper {
+      width: 900px;
+      height: 700px;
+      .ImgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

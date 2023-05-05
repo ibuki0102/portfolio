@@ -27,7 +27,7 @@ export default function MainSwiper() {
         }}
       >
         <SwiperSlide className={styles.ImgContainer}>
-          <Image src={draw} alt="Draw Pic" priority="true" width={500} />
+          <Image src={draw} alt="Draw Pic" priority="true" width={600} />
         </SwiperSlide>
         <SwiperSlide className={styles.ImgContainer}>
           <Image src={dear} alt="RPG game Pic" priority="true" width={700} />
