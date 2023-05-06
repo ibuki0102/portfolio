@@ -55,7 +55,7 @@
         }
       }
       .Introduction {
-        margin: 20px 40px;
+        margin: 20px;
         padding: 20px;
         background-color: #f4f8ff;
         h3 {
@@ -63,7 +63,7 @@
         }
       }
       .Skills {
-        padding: 20px 40px;
+        padding: 20px;
         h2 {
           margin-bottom: 20px;
         }
@@ -118,7 +118,7 @@
         }
       }
       .Certifications {
-        padding: 20px 40px;
+        padding: 20px;
         .Certification {
           border: 2px solid rgb(138, 138, 138);
           border-radius: 10px;
@@ -155,6 +155,15 @@
           .Pfp {
             width: 300px;
           }
+        }
+        .Introduction {
+          margin: 20px 40px;
+        }
+        .Skills {
+          margin: 20px 40px;
+        }
+        .Certifications {
+          margin: 20px 40px;
         }
       }
     }
