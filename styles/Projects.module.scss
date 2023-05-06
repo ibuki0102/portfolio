@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgb(240, 240, 240);
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -15,17 +15,16 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
   .Main {
-    max-width: 1100px;
-    height: 3750px;
+    width: 100%;
     background-color: white;
     margin: 60px auto 0;
-    padding: 20px 0;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     .Container {
-      min-width: 360px;
+      min-width: 350px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -44,17 +43,17 @@
         display: flex;
         flex-direction: column;
         row-gap: 40px;
+        padding-bottom: 40px;
         .ProjectContainer {
           display: flex;
           flex-direction: column-reverse;
           max-width: 1000px;
           padding: 20px 0;
           background-color: #f4f8ff;
-          justify-content: space-around;
           align-items: center;
           .SwiperContainer {
             .Swiper {
-              width: 360px;
+              width: 350px;
               height: 380px;
               background-color: white;
               border-radius: 10px;
@@ -67,8 +66,8 @@
             }
           }
           .Description {
-            min-width: 360px;
-            padding: 10px;
+            min-width: 350px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -104,7 +103,8 @@
         .ProjectsList {
           .ProjectContainer {
             .Description {
-              width: 576px;
+              min-width: 576px;
+              max-width: 700px;
               padding: 0 20px;
             }
             .SwiperContainer {
@@ -124,17 +124,29 @@
 }
 @media screen and (min-width: 768px) {
   .Background {
-    margin-left: 5px;
     .Main {
-      height: 2300px;
       .Container {
         .ProjectsList {
           .ProjectContainer {
             flex-direction: row;
+            min-width: 768px;
+            max-width: 1000px;
             column-gap: 10px;
             padding: 20px;
+            height: 450px;
+            .SwiperContainer {
+              width: 450px;
+              .Swiper {
+                width: 100%;
+                .ImgContainer {
+                  width: 100%;
+                }
+              }
+            }
             .Description {
-              width: 300px;
+              min-width: 340px;
+              max-width: 400px;
+              padding: 0 20px;
             }
           }
           .ProjectOppositeContainer {
@@ -149,7 +161,7 @@
   .Background {
     margin-left: 5px;
     .Main {
-      height: 2300px;
+      max-width: 1100px;
       .Container {
         h1 {
           font-size: 32px;
@@ -157,6 +169,7 @@
         .ProjectsList {
           .ProjectContainer {
             width: 1000px;
+            height: 500px;
             .SwiperContainer {
               width: 600px;
               .Swiper {

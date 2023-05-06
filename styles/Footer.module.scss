@@ -1,18 +1,15 @@
 .Footer {
   width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 120px;
   background-color: #eff5ff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   row-gap: 10px;
   .IconsContainer {
     display: flex;
     column-gap: 20px;
+    margin-top: 20px;
   }
   .Copyright {
     font-weight: 700;
@@ -23,6 +20,7 @@
 }
 @media screen and (min-width: 768px) {
   .Footer {
-    height: 120px;
+    height: 140px;
+    justify-content: center;
   }
 }

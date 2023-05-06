@@ -197,7 +197,7 @@ export default function Projects() {
                     take any long-term course to learn it.
                   </p>
                   <p>
-                    Even if I don't have much artworks, but there'll be more in
+                    Even if I don't have much artworks, there'll be more in
                     future!
                   </p>
                 </div>
