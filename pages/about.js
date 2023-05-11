@@ -4,16 +4,27 @@ import styles from '../styles/About.module.scss'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import pfp from '../public/about/pfp.png'
+import { useContext } from 'react'
+import { ThemeContext } from '../pages/_app'
+
+import '../i18n'
+import { useTranslation } from 'react-i18next'
+import { Trans } from 'react-i18next'
 
 export default function About() {
+  const { t } = useTranslation()
+  const theme = useContext(ThemeContext).theme
   return (
     <>
       <Head>
-        <title>Ibuki's About</title>
+        <title>{t('nav-about')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className={styles.Background}>
+      <div
+        id={theme === 'dark' && styles.DarkTheme}
+        className={styles.Background}
+      >
         <div className={styles.Main}>
           <div className={styles.Container}>
             <div className={styles.Intro}>
@@ -25,38 +36,27 @@ export default function About() {
                 object-fit="fill"
                 className={styles.Pfp}
               />
-              <h1>Hi! I'm Ibuki.</h1>
-              <p className={styles.Pronouns}>
-                You could also call me: 雪央, bigfrog.
-              </p>
-              <p className={styles.Title}>
-                Noob Junior Frontend Developer | Taiwan/Taichung
-              </p>
-              <p>
-                Amateur Translator, Digital artwork maker, Minecraft map maker
-              </p>
+              <h1>{t('about-h1')}</h1>
+              <p className={styles.Pronouns}>{t('about-pronouns')}</p>
+              <p className={styles.Title}>{t('about-title2')}</p>
+              <p>{t('about-subTitle')}</p>
             </div>
             <div className={styles.Introduction}>
-              <h3>Self Introduction</h3>
+              <h3>{t('about-intro-h3')}</h3>
+              <p>{t('about-intro-p1')}</p>
               <p>
-                A normal person who always have passion at create something and
-                find something special.
+                <Trans i18nKey="about-intro-p2">
+                  I'm currently trying to become an
+                  <b>offical Frontend Developer</b>.
+                </Trans>
               </p>
-              <p>
-                I'm currently trying to become an{' '}
-                <b>offical Frontend Developer</b>.
-              </p>
-              <p>
-                Also, I'm helping translate Japanese rpg game to Chinese,
-                learning how to draw better Digital artwork and making Custom
-                Minecraft map.
-              </p>
+              <p>{t('about-intro-p3')}</p>
             </div>
             <div className={styles.Skills}>
-              <h2>Skill Stacks</h2>
+              <h2>{t('about-skills')}</h2>
               <div className={styles.ContentContainer}>
                 <div className={styles.SkillsContainer}>
-                  <h3>Front-End</h3>
+                  <h3>{t('about-skills-front')}</h3>
                   <div className={styles.SkillContainer}>
                     <p>HTML</p>
                     <div className={styles.SkillBarBackground}>
@@ -101,7 +101,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className={styles.SkillsContainer}>
-                  <h3>Back-End</h3>
+                  <h3>{t('about-skills-back')}</h3>
                   <div className={styles.SkillContainer}>
                     <p>Node.js</p>
                     <div className={styles.SkillBarBackground}>
@@ -122,7 +122,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className={styles.SkillsContainer}>
-                  <h3>JS package</h3>
+                  <h3>{t('about-skills-package')}</h3>
                   <div className={styles.SkillContainer}>
                     <p>Swiper</p>
                     <div className={styles.SkillBarBackground}>
@@ -139,14 +139,16 @@ export default function About() {
               </div>
             </div>
             <div className={styles.Certifications}>
-              <h2>Certifications</h2>
+              <h2>{t('about-certification')}</h2>
               <div className={styles.Certification}>
-                <b>Full Stack Web Development Program</b> - Specialize in
-                Front-end Course
+                <Trans i18nKey="about-ac">
+                  <b>Full Stack Web Development Program</b> - Specialize in
+                  Front-end Course
+                </Trans>
                 <p>Alpha Camp</p>
                 <p>April 2023</p>
               </div>
-              <p>To be more...</p>
+              <p>{t('about-more')}</p>
             </div>
           </div>
           <Footer />

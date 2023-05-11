@@ -5,10 +5,13 @@ import github from '../public/icons/github.png'
 import medium from '../public/icons/medium.png'
 import linkedin from '../public/icons/linkedin.png'
 import Image from 'next/image'
+import { useContext } from 'react'
+import { ThemeContext } from '../pages/_app'
 
 export default function Footer() {
+  const theme = useContext(ThemeContext).theme
   return (
-    <div className={styles.Footer}>
+    <div id={theme === 'dark' && styles.DarkTheme} className={styles.Footer}>
       <div className={styles.IconsContainer}>
         <a href="https://www.plurk.com/bigfrog0102" target="_blank">
           <Image src={plurk} alt="plurk" priority="true" width={32} />
@@ -29,7 +32,7 @@ export default function Footer() {
           <Image src={linkedin} alt="linkedin" priority="true" width={32} />
         </a>
       </div>
-      <div className={styles.Copyright}>2023 - Developed by Ibuki.</div>
+      <div className={styles.Copyright}>2023 &copy; - Developed by Ibuki.</div>
     </div>
   )
 }

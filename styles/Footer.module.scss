@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
+  transition: 0.3s;
   .IconsContainer {
     display: flex;
     column-gap: 20px;
@@ -22,5 +23,13 @@
   .Footer {
     height: 140px;
     justify-content: center;
+  }
+}
+#DarkTheme {
+  background-color: rgb(48, 70, 143);
+  .IconsContainer {
+    img {
+      filter: contrast(200%);
+    }
   }
 }

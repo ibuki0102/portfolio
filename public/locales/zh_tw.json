@@ -1,0 +1,54 @@
+{
+  "header-title": "伊吹之家",
+  "nav-home": "主頁",
+  "nav-projects": "作品集",
+  "nav-about": "關於我",
+
+  "home-title": "伊吹之家",
+  "project-title": "伊吹的作品集",
+  "about-title": "關於我",
+
+  "home-search": "你（妳）正在找些什麼嗎？",
+  "home-project-link": "查看<1>作品集</1>頁面可以看到更多我的作品！",
+  "home-interested": "如果你（妳）有興趣，可以透過以下的各個管道與我聯繫。:D",
+
+  "project-h1": "作品集",
+  "project-p1": "有些作品是我獨立製作，有些不是。",
+  "project-p2": "但列在這裡的都是我有參與製作的作品！",
+
+  "project-website-h2": "網站",
+  "project-website-tetris": "<0>俄羅斯方塊</0>: 一個簡單的小遊戲，由html/css/javascript製作而成，這個專案主要是用來複習之前的所學過的基礎。",
+  "project-website-twitter": "<0>推特專案</0>: 一個合作的Alpha Camp畢業專案，成品就像是個小型的推特。",
+  "project-website-portfolio": "<0>作品集網站</0>: 一個用來展示我參與過製作的作品集的網站，其中不僅僅只包含網頁作品。",
+
+  "project-art-h2": "電繪作品",
+  "project-art-p1": "自己繪製的電繪作品，我目前正在使用 <1>Clip Studio Paint</1> 這個軟體來進行繪圖。",
+  "project-art-p2": "我從很小的時候就開始學習電繪，但我並沒有上過任何長時間的專業課程。",
+  "project-art-p3": "雖然目前的作品數量並不多，但未來將會有更多的作品！",
+
+  "project-mc-h2": "當個創世神",
+  "project-mc-p1": "<0>當個創世神</0>是一款著名的沙盒遊戲，比起遊玩自動生成的世界，我使用了一些工具以及指令並製作了一些自定義地圖！",
+  "project-mc-p2": "地圖類型有很多種，像是生存、跑酷以及解謎。其中有些地圖甚至需要付費才可以遊玩。",
+  "project-mc-p3": "通常我會使用一些<1>第三方套件</1>來協助我蓋建築以及繪製地形！",
+
+  "project-rpg-h2": "漢化作品",
+  "project-rpg-p1": "我是<1>將日文作品翻譯成中文作品</1>團隊裡的其中一員。",
+  "project-rpg-p2": "雖然我對於日文有一定的興趣且大學的主修也是日文，害怕失去對日文的興趣讓我選擇不從事日文相關的職業。",
+  "project-rpg-p3": "除了翻譯外，我也協助了團隊使用<1>第三方套件</1>來導入翻譯過的文本至遊戲裡面。",
+
+  "about-h1": "嗨！我是伊吹。",
+  "about-pronouns": "你也可以稱呼我：雪央、bigfrog。",
+  "about-title2": "菜鳥前端工程師 | 台灣/台中",
+  "about-subTitle": "業餘日文翻譯、電繪、當個創世神作圖者",
+  "about-intro-h3": "自我介紹",
+  "about-intro-p1": "一個普通人，總是在創作以及發覺酷東西上有滿滿的熱忱。",
+  "about-intro-p2": "目前正積極的嘗試成為一個<1>正式的前端工程師</1>。",
+  "about-intro-p3": "此外，我也正協助團隊將日文RPG翻譯成中文，學習如何精進電繪技巧，以及製作當個創世神的自定義地圖。",
+  "about-skills": "技能樹",
+  "about-skills-front": "前端",
+  "about-skills-back": "後端",
+  "about-skills-package": "Javascript套件",
+  "about-certification": "證書",
+  "about-ac": "<0>全端網頁開發課程</0> - 專攻前端課程",
+  "about-more": "待新增..."
+}

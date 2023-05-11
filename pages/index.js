@@ -5,16 +5,27 @@ import Image from 'next/image'
 import welcome from '../public/homepage/welcome.png'
 import MainSwiper from '../components/MainSwiper'
 import Footer from '../components/Footer'
+import { useContext } from 'react'
+import { ThemeContext } from '../pages/_app'
+
+import '../i18n'
+import { useTranslation } from 'react-i18next'
+import { Trans } from 'react-i18next'
 
 export default function Home() {
+  const { t } = useTranslation()
+  const theme = useContext(ThemeContext).theme
   return (
     <>
       <Head>
-        <title>Ibuki's Home</title>
+        <title>{t('home-title')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className={styles.Background}>
+      <div
+        id={theme === 'dark' && styles.DarkTheme}
+        className={styles.Background}
+      >
         <div className={styles.Main}>
           <div className={styles.Welcome}>
             <h1>歡迎來到我的作品集！</h1>
@@ -30,18 +41,18 @@ export default function Home() {
               />
             </div>
           </div>
-          <h1 className={styles.Text}>Are you searching for something?</h1>
+          <h1 className={styles.Text}>{t('home-search')}</h1>
           <MainSwiper />
           <h2 className={styles.Text}>
-            For more of my works, check
-            <a href="/projects" className={styles.ProjectsLink}>
-              Projects
-            </a>
-            page!
+            <Trans i18nKey="home-project-link">
+              For more of my works, check
+              <a href="/projects" className={styles.ProjectsLink}>
+                Projects
+              </a>
+              page!
+            </Trans>
           </h2>
-          <h2 className={styles.Text}>
-            If you are interested, contact me via the link below. :D
-          </h2>
+          <h2 className={styles.Text}>{t('home-interested')}</h2>
           <Footer />
         </div>
       </div>

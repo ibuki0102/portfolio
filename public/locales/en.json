@@ -1,0 +1,54 @@
+{
+  "header-title": "Ibuki's Home",
+  "nav-home": "Home",
+  "nav-projects": "Projects",
+  "nav-about": "About",
+
+  "home-title": "Ibuki's Home",
+  "project-title": "Ibuki's Projects",
+  "about-title": "Ibuki's About",
+
+  "home-search": "Are you searching for something?",
+  "home-project-link": "For more of my works, check<1>Projects</1>page!",
+  "home-interested": "If you are interested, contact me via the link below. :D",
+
+  "project-h1": "Projects",
+  "project-p1": "Some projects are done by myself, some aren't.",
+  "project-p2": "But I do participate every projects listed here!",
+
+  "project-website-h2": "Website",
+  "project-website-tetris": "<0>Tetris Game</0>: A simple game made by using html/css/javascript, it's a side project that I used to review the basics.",
+  "project-website-twitter": "<0>Simple Twitter</0>: A cooperation project which was my graduation project at Alpha Camp, it just like a simple version of real Twitter.",
+  "project-website-portfolio": "<0>Portfolio Website</0>: A website to display the projects that I have participated, which not only includes website project.",
+
+  "project-art-h2": "Digital Artworks",
+  "project-art-p1": "The digital artworks that drawn by myself. I'm currently using <1>Clip Studio Paint</1> to draw.",
+  "project-art-p2": "I started learning digital art at a young age, but I didn't take any long-term course to learn it.",
+  "project-art-p3": "Even if I don't have much artworks, there'll be more in future!",
+
+  "project-mc-h2": "Minecraft",
+  "project-mc-p1": "<b>Minecraft</b> is a well-known Sandbox game, and instead of playing auto-generated world, I made some custom map that using some tools and command!",
+  "project-mc-p2": "There're many kind of custom maps, survival, parkour and puzzle. Some of them even need to pay for play.",
+  "project-mc-p3": "Usually I will use some 3rd-party plugins to help me making the buildings and terrain!",
+
+  "project-rpg-h2": "Translated Project",
+  "project-rpg-p1": "I'm a member at a group that are <b>translating Japanese rpg games to Chinese</b>.",
+  "project-rpg-p2": "Although I have decent interest in Japanese and it's my major in university, being afraid of losing my interest in Japanese made me chose not to become a translating worker.",
+  "project-rpg-p3": "Beside of translating, I also participate at using <b>3rd-party plugin</b> to insert the translated text into the game!",
+
+  "about-h1": "Hi! I'm Ibuki.",
+  "about-pronouns": "You could also call me: 雪央, bigfrog.",
+  "about-title2": "Noob Junior Frontend Developer | Taiwan/Taichung",
+  "about-subTitle": "Amateur Translator, Digital artwork maker, Minecraft map maker",
+  "about-intro-h3": "Self Introduction",
+  "about-intro-p1": "A normal person who always have passion at create something and find something special.",
+  "about-intro-p2": "I'm currently trying to become an <b>offical Frontend Developer</b>.",
+  "about-intro-p3": "Also, I'm helping translate Japanese rpg game to Chinese, learning how to draw better Digital artwork and making Custom Minecraft map.",
+  "about-skills": "Skill Stacks",
+  "about-skills-front": "Front-End",
+  "about-skills-back": "Back-End",
+  "about-skills-package": "Javascript-package",
+  "about-certification": "Certifications",
+  "about-ac": "<0>Full Stack Web Development Program</0> - Specialize in Front-end Course",
+  "about-more": "To be more..."
+}
