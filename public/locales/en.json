@@ -27,14 +27,14 @@
   "project-art-p3": "Even if I don't have much artworks, there'll be more in future!",
 
   "project-mc-h2": "Minecraft",
-  "project-mc-p1": "<b>Minecraft</b> is a well-known Sandbox game, and instead of playing auto-generated world, I made some custom map that using some tools and command!",
+  "project-mc-p1": "<0>Minecraft</0> is a well-known Sandbox game, and instead of playing auto-generated world, I made some custom map that using some tools and command!",
   "project-mc-p2": "There're many kind of custom maps, survival, parkour and puzzle. Some of them even need to pay for play.",
   "project-mc-p3": "Usually I will use some 3rd-party plugins to help me making the buildings and terrain!",
 
   "project-rpg-h2": "Translated Project",
-  "project-rpg-p1": "I'm a member at a group that are <b>translating Japanese rpg games to Chinese</b>.",
+  "project-rpg-p1": "I'm a member at a group that are <1>translating Japanese rpg games to Chinese</1>.",
   "project-rpg-p2": "Although I have decent interest in Japanese and it's my major in university, being afraid of losing my interest in Japanese made me chose not to become a translating worker.",
-  "project-rpg-p3": "Beside of translating, I also participate at using <b>3rd-party plugin</b> to insert the translated text into the game!",
+  "project-rpg-p3": "Beside of translating, I also participate at using <1>3rd-party plugin</1> to insert the translated text into the game!",
 
   "about-h1": "Hi! I'm Ibuki.",
   "about-pronouns": "You could also call me: 雪央, bigfrog.",
@@ -42,7 +42,7 @@
   "about-subTitle": "Amateur Translator, Digital artwork maker, Minecraft map maker",
   "about-intro-h3": "Self Introduction",
   "about-intro-p1": "A normal person who always have passion at create something and find something special.",
-  "about-intro-p2": "I'm currently trying to become an <b>offical Frontend Developer</b>.",
+  "about-intro-p2": "I'm currently trying to become an <1>offical Frontend Developer</1>.",
   "about-intro-p3": "Also, I'm helping translate Japanese rpg game to Chinese, learning how to draw better Digital artwork and making Custom Minecraft map.",
   "about-skills": "Skill Stacks",
   "about-skills-front": "Front-End",
