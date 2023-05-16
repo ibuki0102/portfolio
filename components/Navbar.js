@@ -137,24 +137,3 @@ export default function Navbar() {
     </div>
   )
 }
-{
-  /* <div className={styles.ProjectsContainer}>
-            <ul className={styles.ProjectsList}>
-              <li>
-                <Link href="/projects">All</Link>
-              </li>
-              <li>
-                <Link href="/projects">Website</Link>
-              </li>
-              <li>
-                <Link href="/about">Digital Artwork</Link>
-              </li>
-              <li>
-                <Link href="/about">Minecraft</Link>
-              </li>
-              <li>
-                <Link href="/about">Translated Project</Link>
-              </li>
-            </ul>
-          </div> */
-}
