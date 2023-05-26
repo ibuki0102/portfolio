@@ -18,15 +18,11 @@
   }
 }
 .Background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
   transition: 0.3s;
   background-color: rgb(240, 240, 240);
-  overflow-y: scroll;
+  overflow-y: hidden;
   &::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -34,11 +30,11 @@
   .Main {
     width: 100%;
     background-color: white;
-    margin: 60px auto 0 auto;
+    margin: 0 auto;
     padding-top: 20px;
     .Welcome {
       min-width: 350px;
-      min-height: 400px;
+      min-height: 350px;
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -48,7 +44,8 @@
       color: rgb(73, 73, 73);
       background-color: #eff5ff;
       h1 {
-        font-size: 20px;
+        font-size: 24px;
+        margin: 20px 0;
       }
       .Cover {
         margin-top: 10px;
@@ -61,13 +58,13 @@
           height: 100%;
           top: 0;
           left: 0;
-          box-shadow: 0 0 20px 10px aliceblue inset;
+          box-shadow: 0 0 10px 10px #eff5ff inset;
         }
       }
     }
     .Text {
       margin: 0 auto;
-      margin: 30px 0 30px 0;
+      margin: 30px 0;
       font-size: 20px;
       text-align: center;
       overflow-wrap: break-word;
@@ -82,29 +79,54 @@
     }
   }
 }
-
+.BackToTop {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  background-color: cornflowerblue;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.3s;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  &:hover {
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+}
 @media screen and (min-width: 768px) {
   .Background {
     .Main {
-      margin: 80px auto 0 auto;
       .Welcome {
         min-width: 500px;
-        padding: 20px;
+        padding: 30px;
         row-gap: 10px;
         h1 {
-          font-size: 24px;
+          font-size: 36px;
+          margin: 20px 0;
         }
         .Cover {
           margin-top: 20px;
           position: relative;
-          width: 500px;
         }
       }
       .Text {
-        margin-top: 30px;
+        margin: 40px 0;
         font-size: 24px;
       }
     }
+  }
+  .BackToTop {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -113,7 +135,6 @@
     .Main {
       max-width: 1100px;
       .Welcome {
-        padding: 30px 0;
         .Cover {
           margin-top: 20px;
           position: relative;
@@ -122,7 +143,6 @@
         }
       }
       .Text {
-        margin-top: 30px;
         font-size: 32px;
       }
     }

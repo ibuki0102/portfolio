@@ -4,6 +4,7 @@ import styles from '../styles/About.module.scss'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import pfp from '../public/about/pfp.png'
+import BackToTop from '../components/BackToTop'
 import { useContext } from 'react'
 import { ThemeContext } from '../pages/_app'
 
@@ -20,11 +21,11 @@ export default function About() {
         <title>{t('nav-about')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <div
         id={theme === 'dark' && styles.DarkTheme}
         className={styles.Background}
       >
+        <Navbar />
         <div className={styles.Main}>
           <div className={styles.Container}>
             <div className={styles.Intro}>
@@ -152,6 +153,7 @@ export default function About() {
             </div>
           </div>
           <Footer />
+          <BackToTop />
         </div>
       </div>
     </>

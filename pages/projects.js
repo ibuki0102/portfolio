@@ -2,6 +2,7 @@ import styles from '../styles/Projects.module.scss'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import BackToTop from '../components/BackToTop'
 
 import WebProjects from '../components/WebProjects'
 import ArtProjects from '../components/ArtProjects'
@@ -23,11 +24,11 @@ export default function Projects() {
         <title>{t('project-title')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <div
         id={theme === 'dark' && styles.DarkTheme}
         className={styles.Background}
       >
+        <Navbar />
         <div className={styles.Main}>
           <div className={styles.Container}>
             <h1>{t('project-h1')}</h1>
@@ -44,6 +45,7 @@ export default function Projects() {
             </div>
           </div>
           <Footer />
+          <BackToTop />
         </div>
       </div>
     </>

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import welcome from '../public/homepage/welcome.png'
 import MainSwiper from '../components/MainSwiper'
 import Footer from '../components/Footer'
+import BackToTop from '../components/BackToTop'
 import { useContext } from 'react'
 import { ThemeContext } from '../pages/_app'
 
@@ -21,16 +22,15 @@ export default function Home() {
         <title>{t('home-title')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <div
         id={theme === 'dark' && styles.DarkTheme}
         className={styles.Background}
       >
+        <Navbar />
+
         <div className={styles.Main}>
           <div className={styles.Welcome}>
-            <h1>歡迎來到我的作品集！</h1>
-            <h1>Welcome to my portfolio!</h1>
-            <h1>ようこそ！私のポートフォリオ！</h1>
+            <h1>{t('home-welcome')}</h1>
             <div className={styles.Cover}>
               <Image
                 src={welcome}
@@ -54,6 +54,7 @@ export default function Home() {
           </h2>
           <h2 className={styles.Text}>{t('home-interested')}</h2>
           <Footer />
+          <BackToTop />
         </div>
       </div>
     </>
