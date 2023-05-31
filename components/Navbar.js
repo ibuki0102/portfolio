@@ -32,7 +32,10 @@ export default function Navbar() {
     i18n.changeLanguage(lng)
   }
   return (
-    <div id={theme === 'dark' && styles.DarkTheme} className={styles.Overlay}>
+    <div
+      id={theme === 'dark' ? styles.DarkTheme : undefined}
+      className={styles.Overlay}
+    >
       <div className={styles.Container}>
         <div className={styles.BtnGroup}>
           <button

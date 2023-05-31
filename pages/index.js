@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image'
-import welcome from '../public/homepage/welcome.png'
+import welcome from '../public/homepage/welcome.jpg'
+import darkWelcome from '../public/homepage/dark-welcome.jpg'
 import MainSwiper from '../components/MainSwiper'
 import Footer from '../components/Footer'
 import BackToTop from '../components/BackToTop'
@@ -23,20 +24,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        id={theme === 'dark' && styles.DarkTheme}
+        id={theme === 'dark' ? styles.DarkTheme : undefined}
         className={styles.Background}
       >
         <Navbar />
-
         <div className={styles.Main}>
           <div className={styles.Welcome}>
-            <h1>{t('home-welcome')}</h1>
+            <div className={styles.Description}>
+              <h1>{t('home-welcome')}</h1>
+              <div className={styles.Goal}>
+                <b>這個作品集網站主要是用來：</b>
+                <ul>
+                  <li>1. 學習Next.js框架，Swiper、i18n等套件。</li>
+                  <li>2. 展示網頁、非網頁相關作品。</li>
+                </ul>
+              </div>
+            </div>
             <div className={styles.Cover}>
               <Image
-                src={welcome}
+                src={theme === 'dark' ? darkWelcome : welcome}
                 alt="Welcome Pic"
                 priority="true"
-                width={700}
+                width={1100}
                 className={styles.WelcomePic}
               />
             </div>

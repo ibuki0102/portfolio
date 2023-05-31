@@ -31,34 +31,35 @@
     width: 100%;
     background-color: white;
     margin: 0 auto;
-    padding-top: 20px;
     .Welcome {
       min-width: 350px;
-      min-height: 350px;
-      padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      row-gap: 10px;
       color: rgb(73, 73, 73);
       background-color: #eff5ff;
-      h1 {
-        font-size: 24px;
-        margin: 20px 0;
+      position: relative;
+      overflow: hidden;
+      .Description {
+        position: absolute;
+        z-index: 2;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 20px 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        h1 {
+          font-size: 24px;
+          margin: 10px 0;
+        }
       }
       .Cover {
-        margin-top: 10px;
-        position: relative;
-        min-width: 400;
-        &:after {
-          position: absolute;
-          content: '';
-          width: 100%;
+        min-width: 350px;
+        .WelcomePic {
           height: 100%;
-          top: 0;
-          left: 0;
-          box-shadow: 0 0 10px 10px #eff5ff inset;
+          display: block;
+          position: relative;
         }
       }
     }
@@ -106,14 +107,40 @@
     .Main {
       .Welcome {
         min-width: 500px;
-        padding: 30px;
-        row-gap: 10px;
-        h1 {
-          font-size: 36px;
-          margin: 20px 0;
+        .Description {
+          padding: 40px 20px;
+          h1 {
+            font-size: 56px;
+            margin: 20px 0;
+          }
+          .Goal {
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -20px;
+            bottom: 0px;
+            width: 10px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -20px;
+            bottom: 0;
+            width: 10px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+          }
         }
         .Cover {
-          margin-top: 20px;
           position: relative;
         }
       }
@@ -136,10 +163,7 @@
       max-width: 1100px;
       .Welcome {
         .Cover {
-          margin-top: 20px;
           position: relative;
-          width: 700px;
-          height: 490px;
         }
       }
       .Text {

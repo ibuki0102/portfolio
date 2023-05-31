@@ -25,7 +25,7 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        id={theme === 'dark' && styles.DarkTheme}
+        id={theme === 'dark' ? styles.DarkTheme : undefined}
         className={styles.Background}
       >
         <Navbar />

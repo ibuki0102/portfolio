@@ -11,7 +11,10 @@ import { ThemeContext } from '../pages/_app'
 export default function Footer() {
   const theme = useContext(ThemeContext).theme
   return (
-    <div id={theme === 'dark' && styles.DarkTheme} className={styles.Footer}>
+    <div
+      id={theme === 'dark' ? styles.DarkTheme : undefined}
+      className={styles.Footer}
+    >
       <div className={styles.IconsContainer}>
         <a href="https://www.plurk.com/bigfrog0102" target="_blank">
           <Image src={plurk} alt="plurk" priority="true" width={32} />
