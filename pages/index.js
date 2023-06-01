@@ -33,10 +33,10 @@ export default function Home() {
             <div className={styles.Description}>
               <h1>{t('home-welcome')}</h1>
               <div className={styles.Goal}>
-                <b>這個作品集網站主要是用來：</b>
+                <b>{t('home-goal-title')}</b>
                 <ul>
-                  <li>1. 學習Next.js框架，Swiper、i18n等套件。</li>
-                  <li>2. 展示網頁、非網頁相關作品。</li>
+                  <li>{t('home-goal-one')}</li>
+                  <li>{t('home-goal-two')}</li>
                 </ul>
               </div>
             </div>

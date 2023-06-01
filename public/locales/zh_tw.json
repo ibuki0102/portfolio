@@ -9,6 +9,9 @@
   "about-title": "關於我",
 
   "home-welcome": "歡迎來到我的作品集！",
+  "home-goal-title": "這個作品集網站主要是用來：",
+  "home-goal-one": "1. 學習Next.js框架，Swiper、i18n等套件。",
+  "home-goal-two": "2. 展示網頁、非網頁相關作品。",
   "home-search": "你（妳）正在找些什麼嗎？",
   "home-project-link": "查看<1>作品集</1>頁面可以看到更多我的作品！",
   "home-interested": "如果你（妳）有興趣，可以透過以下的各個管道與我聯繫。:D",

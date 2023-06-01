@@ -75,7 +75,9 @@ export default function Navbar() {
             />
           )}
         </div>
-        <div className={styles.BlogTitle}>{t('header-title')}</div>
+        <a href="https://ibuki-portfolio.vercel.app">
+          <h1 className={styles.BlogTitle}>{t('header-title')}</h1>
+        </a>
         <ul className={menuState ? styles.OpenedNavbar : styles.Navbar}>
           <li>
             <Link href="/">{t('nav-home')}</Link>

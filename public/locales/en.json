@@ -9,6 +9,9 @@
   "about-title": "Ibuki's About",
 
   "home-welcome": "Welcome to my portfolio!",
+  "home-goal-title": "This website is built for:",
+  "home-goal-one": "1. Learn the Next.js framework, Swiper, i18n and other packages.",
+  "home-goal-two": "2. Display website and non-website related works.",
   "home-search": "Are you searching for something?",
   "home-project-link": "For more of my works, check<1>Projects</1>page!",
   "home-interested": "If you are interested, contact me via the link below. :D",
