@@ -22,6 +22,10 @@ export default function Home() {
       <Head>
         <title>{t('home-title')}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="YvZVkF4zC6dDKQDMT6fScZ4T2E2Ctb05wNtj_gE0c7w"
+        />
       </Head>
       <div
         id={theme === 'dark' ? styles.DarkTheme : undefined}
