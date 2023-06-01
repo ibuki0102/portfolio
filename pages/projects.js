@@ -27,6 +27,10 @@ export default function Projects() {
           name="google-site-verification"
           content="YvZVkF4zC6dDKQDMT6fScZ4T2E2Ctb05wNtj_gE0c7w"
         />
+        <meta
+          name="description"
+          content="伊吹之家，ibuki's home，伊吹的作品集網站。"
+        ></meta>
       </Head>
       <div
         id={theme === 'dark' ? styles.DarkTheme : undefined}
