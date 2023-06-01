@@ -29,7 +29,7 @@ export default function Projects() {
         />
         <meta
           name="description"
-          content="伊吹之家，ibuki's home，伊吹的作品集網站。"
+          content="雪央的作品集網站，伊吹之家，ibuki's home。"
         ></meta>
       </Head>
       <div

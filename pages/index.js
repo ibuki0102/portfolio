@@ -26,6 +26,10 @@ export default function Home() {
           name="google-site-verification"
           content="YvZVkF4zC6dDKQDMT6fScZ4T2E2Ctb05wNtj_gE0c7w"
         />
+        <meta
+          name="description"
+          content="雪央的作品集網站，伊吹之家，ibuki's home。"
+        ></meta>
       </Head>
       <div
         id={theme === 'dark' ? styles.DarkTheme : undefined}
