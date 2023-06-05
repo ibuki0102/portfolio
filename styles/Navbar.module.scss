@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding: 10px;
   height: 60px;
-  background-color: rgba(100, 149, 237, 0.8);
+  background-color: rgba(132, 211, 231, 0.7);
   position: relative;
   z-index: 3;
   transition: 0.3s;
@@ -158,10 +158,10 @@
           cursor: pointer;
           &:hover {
             background: none;
-            color: #1a1a1a;
+            color: rgba(0, 0, 0, 0.8);
           }
           &:after {
-            background: #1a1a1a;
+            background: rgba(0, 0, 0, 0.8);
             content: '';
             height: 100%;
             position: absolute;
@@ -185,7 +185,7 @@
         &:checked + label {
           cursor: default;
           color: #fff;
-          background-color: #1a1a1a;
+          background-color: rgba(0, 0, 0, 0.8);
           transition: color 200ms;
           &:after {
             left: 0;
